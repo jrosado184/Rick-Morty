@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 27%;
+  margin-left: 2%;
+  margin-top: 3%;
+}
+
+.search {
+  margin-top: 7%;
+  margin-right: 5%;
+}
+
+.search-box {
+  width: 200px;
+  height: 30px;
+  margin-right: 12px;
+  border-radius: 50px;
+}
+
+.search-button {
+  width: 80px;
+  height: 33px;
+  margin-top: 2%;
+  border-radius: 50px;
+  background-color: #13adc4;
+  color: white;
+}
+
+.characters {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin-top: 4%;
+}
+
+.character-container {
+  width: 20.1%;
+}
+
+.character-img {
+  border: 2px solid black;
+  box-shadow: 1px 3px 4px gray;
+}
+
+.character-name {
+  font-family: "Rampart One", cursive;
+  font-size: 1.4rem;
+}
