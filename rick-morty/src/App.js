@@ -1,16 +1,43 @@
 import React from 'react'
 import CharacterList from './components/CharacterList'
-import Header from './components/Header'
+import Login from './components/Login'
 import './App.css'
+import { connect } from 'react-redux'
+import { Routes, Route, Link } from 'react-router-dom'
 
-const App = () => {
+
+
+const App = (props) => {
+
+console.log(props)
+const { dispatch } = props
+
+
+const handleSubmit = (e) => {
+e.preventDefault();
+}
+
+
   return (
     <>
-    <Header />
-   <CharacterList />
+    <Routes>
+      <Route path="/login" element={<Login/>} >
+      </Route>
+      <Route path='/characters' element={<CharacterList/>} >
+      </Route>
+    </Routes>
+    
+   
+   
    </>
   )
 }
 
-export default App
+const mapStateToProps = state => {
+ 
+}
+
+
+
+export default connect(mapStateToProps)(App)
 

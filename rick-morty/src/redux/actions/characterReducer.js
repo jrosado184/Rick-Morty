@@ -16,3 +16,10 @@ export const getCharacters = () => {
             });
     };
 }
+
+
+
+
+
+
+

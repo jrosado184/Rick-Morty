@@ -50,3 +50,60 @@
   font-family: "Rampart One", cursive;
   font-size: 1.4rem;
 }
+
+/* LOGIN FORM */
+
+.login-form {
+  background-image: url("./assets/login.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: 80%;
+  background-color: #c4d560;
+  border: 2px solid black;
+  width: 50%;
+  height: 60vh;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.login-image {
+  width: 10%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+::placeholder {
+  padding-left: 4%;
+}
+
+.username {
+  display: block;
+  margin: 20px;
+  margin-top: 4%;
+  width: 27%;
+  height: 25px;
+  border-radius: 3px;
+  border: 1.5px solid black;
+  margin-top: 10%;
+}
+
+.password {
+  display: block;
+  margin: 20px;
+  margin-top: 4%;
+  width: 27%;
+  height: 25px;
+  border-radius: 3px;
+  border: 1.5px solid black;
+}
+
+.submit-btn {
+  width: 12%;
+  height: 30px;
+  margin-left: 9%;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 0.5px solid black;
+  border-radius: 3px;
+}

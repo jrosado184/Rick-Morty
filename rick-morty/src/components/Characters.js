@@ -1,4 +1,5 @@
 import React from 'react'
+import { logo } from '../assets/Assets';
 
 const Characters = (props) => {
     const { character } = props;
@@ -7,6 +8,7 @@ const Characters = (props) => {
             <img className='character-img' src={character.image} alt='characters' />
             <h1 className='character-name'>{character.name}</h1>
         </div>
+    
     )
 }
 

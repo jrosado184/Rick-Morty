@@ -2,7 +2,8 @@ import { FETCH_SUCCESS } from "../actions/characterReducer"
 
 
 const initialState = {
-    characters: []
+    characters: [],
+    input: ''
 }
 
 
