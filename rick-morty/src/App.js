@@ -23,6 +23,8 @@ e.preventDefault();
     <Routes>
       <Route path="/login" element={<Login/>} >
       </Route>
+      <Route path="/" element={<Login/>} >
+      </Route>
       <Route path='/characters' element={<CharacterList/>} >
       </Route>
     </Routes>

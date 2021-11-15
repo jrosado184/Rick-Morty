@@ -1,10 +1,11 @@
 import React from 'react'
-import logo from '../assets/login.png'
+import { Link } from 'react-router-dom'
 
 const Login = () => {
     return (
         <div>
        <form className='login-form'>
+           <Link className='admin' to='/characters'>Admin</Link>
            <input className='username'
            type='text'
            placeholder='username'
@@ -16,6 +17,10 @@ const Login = () => {
             <input className='submit-btn'
             type='submit'
             value='Login' />
+            <p className='or'>OR</p>
+            <input className='register-btn'
+            type='submit'
+            value='Register' />
        </form>
        </div>
     )

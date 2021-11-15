@@ -5,6 +5,7 @@ import Characters from './Characters'
 import { logo } from '../assets/Assets'
 
 
+
 const CharacterList = (props) => {
     const { dispatch, characters } = props
 
