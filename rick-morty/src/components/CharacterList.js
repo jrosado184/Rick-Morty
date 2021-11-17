@@ -5,6 +5,7 @@ import Characters from "./Characters";
 import { logo } from "../assets/Assets";
 import axios from "axios";
 import { fetchNew } from "../redux/actions/characterActions";
+import { Link } from "react-router-dom";
 
 const CharacterList = (props) => {
   const { dispatch, characters, loading } = props;
@@ -42,6 +43,7 @@ const CharacterList = (props) => {
             className='search-box'
             type='text'
             name='search'
+            placeholder='Characters Name...'
           />
           <input
             onClick={handleSearch}
@@ -51,6 +53,11 @@ const CharacterList = (props) => {
           />
         </form>
       </div>
+      <nav>
+        <Link className='logout' to='/login'>
+          Logout
+        </Link>
+      </nav>
       <div className='characters'>
         {characters.map((character) => (
           <Characters character={character} key={character.id} />
